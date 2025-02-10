@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jij en Ik - Mijn Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welkom op de website van Jij en Ik ❤️</h1>
+    <button onclick="showLoveAlert()">Ik hou van je!</button>
+  </header>
+
+  <!-- Toegangscode formulier -->
+  <section id="access-section">
+    <h2>Voer toegangscode in:</h2>
+    <input type="password" id="access-code" placeholder="Voer code in">
+    <button onclick="checkAccessCode()">Verifiëren</button>
+    <p id="access-error" style="color: red; display: none;">Foute code, probeer het opnieuw!</p>
+  </section>
+
+  <!-- Hoofd inhoud die zichtbaar wordt na code-verificatie -->
+  <section id="main-content" style="display: none;">
+    <h2>Foto's en Video's 📸</h2>
+    <p>Upload hier je foto's en video's!</p>
+
+    <h2>Dagboek 📖</h2>
+    <p>Schrijf hier je gedachten en herinneringen.</p>
+  </section>
+
+  <footer>
+    <p>Jij en ik - samen voor altijd 💖</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
